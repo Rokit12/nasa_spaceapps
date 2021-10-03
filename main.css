@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+  padding: 0;
+  min-width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  /* height: 100vh; */
+  margin: 0;
+}
+
+.main-container {
+  position: relative;
+  height: 90%;
+  width: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .elements */
+.main-container .img-element {
+  position: absolute;
+  top: 30%;
+  width: 200px;
+  z-index: 100;
+}
+
+.main-container .content-lines {
+  position: fixed;
+  width: 400px;
+  z-index: 1;
+}
+
+.main-container .container {
+  position: relative;
+  background-image: url('images/moon.png');
+  background-size: 900px;
+  background-position: 50% -30%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container .container .nasa-logo {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.main-container .container .nasa-logo img {
+  width: 120px;
+}
+
+.main-container .container .owners-info {
+  margin-top: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main-container .container .main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+}
+
+.main-container .container .main-title p {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 350%;
+  line-height: 102px;
+  letter-spacing: 2px;
+}
+
+.main-container .container .main-title small {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.main-container .container .selection-options {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-container .container .selection-options .option {
+  margin: 20px;
+  background: white;
+  font-weight: bold;
+  padding: 19px 23px;
+  font-size: 10px;
+  font-family: 'Montserrat';
+}
+
+.the-ship {
+  background: #f7f7f7;
+  padding-top: 70px;
+  height:100%;
+  padding-bottom: 180px;
+  padding-left: 80px;
+  /* width: 100%; */
+  z-index: 10;
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+.the-ship .top-content {
+  /* position: relative; */
+  display: flex;
+  /* padding: 40px; */
+  width: 100%;
+  height: 80%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.the-ship .top-content .left-content h2 {
+  display: inline-block;
+  margin-top: 80px;
+  width: 10%;
+  /* padding: 10px; */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 63px;
+  color: #0D0D0D;
+}
+
+.left-content {
+  padding-left: 90px;
+}
+
+.the-ship .top-content .left-content .nav-content {
+  margin-top: 27%;
+}
+
+.the-ship .top-content .left-content .nav-content img {
+  width: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: .5s ease
+}
+
+.the-ship .top-content .left-content .nav-content img:hover {
+  filter: saturate(70%);
+  transform: scale(1.1);
+}
+
+.the-ship .top-content .right-content {
+  padding-top: 46px;
+  position: relative;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.the-ship .top-content .right-content .bg-text {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 468px;
+  color: #EDEDED;
+  z-index: -1;
+}
+
+.the-ship .top-content .right-content .bg-text1 {
+  top: -28px;
+  right: 313px;
+}
+
+.the-ship .top-content .right-content .bg-text2 {
+  top: 161px;
+  right: 123px;
+}
+
+.the-ship .top-content .right-content img {
+  margin-top: 70px;
+  width: 80%;
+  box-sizing: border-box;
+  /* box-shadow: 0 40px 37px -37px rgba(0, 0, 0, .5); */
+}
+
+.the-ship .the-ship-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.the-ship .the-ship-footer .description {
+  padding: 20px 0 0px 80px;
+  width: 25%;
+}
+
+.the-ship .the-ship-footer .description small {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: justify;
+  color: #454545;
+}
+
+.the-ship .the-ship-footer .expalnation {
+  padding: 0px 50px 50px 100px;
+  width: 75%;
+}
+
+.the-ship .the-ship-footer .expalnation h1 {
+  margin: -5px 0 0 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 73px;
+}
+
+.the-ship .the-ship-footer .expalnation p {
+  margin: 1px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  max-width: 75%;
+}
+
+.info {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 20px;
+  text-align: justify;
+  color: #454545;
+}
+
+.learn-more {
+  margin-top: 70px;
+  width: 100%;
+  padding-right: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.learn-more h1 {
+  width: 300px;
+  margin: 0 40px 0 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 117px;
+  cursor: pointer;
+}
+
+.the-ship .the-ship-footer .expalnation p .rd-txt {
+  color: red
+}
+
+.item-photo {
+  width: 800px;
+  height: auto;
+}
+
+.activities {
+  /* height: 100vh; */
+  background: rgb(12, 12, 13);
+  z-index: 10;
+}
+
+.activities .top-acontent {
+  width: 96%;
+  padding: 90px 73px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.activities .top-acontent h2 {
+  margin: 0 40px 0 0;
+  width: 35%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 55px;
+  color: #F7F7F7;
+}
+
+.activities .top-acontent small {
+  width: 30%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  text-align: justify;
+  color: #696969;
+}
+
+.activities .top-acontent .search {
+  position: relative;
+  left: 10%;
+  bottom: 50%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 16px;
+  /* identical to box height */
+  text-align: right;
+  color: #969696;
+}
+
+.activities .carousel {
+  display: flex;
+  transform: scale(0.88);
+  /* overflow-x:scroll; */
+}
+
+
+.activities .carousel .act:hover {
+  /* filter: brightness(0.1); */
+  transform: scale(0.99);
+}
+
+.activities .carousel .earth-science {
+  margin: 20px;
+  width: 350px;
+  height: 419px;
+  background: url('images/activities/earth-science.png') center no-repeat;
+  background-size: cover;
+}
+
+.activities .carousel .planetary-science {
+  margin: 20px;
+  width: 300px;
+  height: 350px;
+  background: url('images/activities/planetary-science.png') center no-repeat;
+  ;
+  background-size: auto;
+}
+
+.activities .carousel .bio-phy {
+  margin: 20px;
+  width: 300px;
+  height: 350px;
+  background: url('images/activities/bio-phy.png') center no-repeat;
+  ;
+}
+
+.activities .carousel .heliophysic {
+  margin: 20px;
+  width: 300px;
+  height: 350px;
+  background: url('images/activities/heiophy.png') center no-repeat;
+  ;
+}
+
+.act-content {
+  color: white;
+  padding: 20px 30px;
+  position: absolute;
+  bottom: 90px;
+}
+
+.act-content h6 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  text-align: justify;
+  margin: 0;
+}
+
+.act-content small {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  /* identical to box height */
+  text-align: justify;
+}
+
+.activiteis-footer {
+  padding:20px  80px 50px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activities .activiteis-footer p {
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 27px;
+  color: #696969;
+  max-width: 30ch;
+}
+
+.activities .activiteis-footer p span  {
+  position: absolute;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 70px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #969696;
+}
+.activities .activiteis-footer p span::before {
+  content: "";
+  top:0;
+  left: 30px;
+  background-color:#969696;
+  width: 200px;
+  height: 100px;
+
+}
+
+.activities .activiteis-footer p:before {
+  content: '"';
+  top: 300px;
+  left: 0;
+  color: #696969;
+  font-weight: normal;
+  font-size: 90px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.activities .activiteis-footer p:after {
+  content: '';
+  bottom: 0;
+  left: 0;
+  background-color: #696969;
+  height: 10px;
+  width: 20px;
+}
+
+.connections {
+  position: relative;
+  background: red;
+  padding: 20px 20px 20px 80px;
+  width: 25%;
+  height: 20px
+}
+
+.connections a {
+  position: absolute;
+  right: 30px;
+  font-family: Montserrat;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  outline: none
+}
+
+.connections a:after {
+  content: '';
+  top: 10px;
+  right: 10px;
+  background: white;
+  height: 30000px;
+  width: 40px;
+  z-index: 1111111111111111111111111111111111111111111111111111111
+}
+
+@media only screen and (max-width : 719px) {
+  .main-container .content-lines {
+    top: 0;
+  }
+
+  .main-container .container {
+    width: 100%;
+  }
+
+  .main-container .container {
+    background-position: 50% 1000%;
+  }
+
+  .main-container .container .main-title p {
+    line-height: 50px;
+    font-size: 240%;
+  }
+}
+
+@media only screen and (max-width : 1124px) {
+  body {
+    height: 100%;
+  }
+
+  .main-container .container {
+    background-position: 50% -60%;
+  }
+
+  .main-container, .main-container .container {
+    height: 130%;
+  }
+}
