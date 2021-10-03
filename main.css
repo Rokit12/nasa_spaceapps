@@ -10,6 +10,16 @@ body {
   margin: 0;
 }
 
+.curve{
+  color: blue;
+}
+
+.owners-info p{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 35px;
+}
 .main-container {
   position: relative;
   height: 90%;
